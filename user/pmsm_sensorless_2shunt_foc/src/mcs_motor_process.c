@@ -66,6 +66,8 @@ static APT_RegStruct* g_apt[PHASE_MAX_NUM] = {APT_U, APT_V, APT_W};
 /* Motor control handle */
 static MTRCTRL_Handle g_mc = {0};
 
+
+
 /* Motor speed loop PI param. */
 static void SPDCTRL_InitWrapper(SPDCTRL_Handle *spdHandle, float ts)
 {
@@ -79,7 +81,7 @@ static void SPDCTRL_InitWrapper(SPDCTRL_Handle *spdHandle, float ts)
     /* Speed loop param init. */
     SPDCTRL_Init(spdHandle, &g_motorParam, spdPi, ts);
 
-    
+
 }
 
 /* Motor current Loop PI param. */
