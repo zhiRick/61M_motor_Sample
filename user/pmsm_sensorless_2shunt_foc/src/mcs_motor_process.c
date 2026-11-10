@@ -78,6 +78,8 @@ static void SPDCTRL_InitWrapper(SPDCTRL_Handle *spdHandle, float ts)
     };
     /* Speed loop param init. */
     SPDCTRL_Init(spdHandle, &g_motorParam, spdPi, ts);
+
+    
 }
 
 /* Motor current Loop PI param. */
